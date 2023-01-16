@@ -1,30 +1,69 @@
-# This is a sample Python script.
-from math import sqrt
+def sumanumere():
+    print('Introduceti primul numar, a')
+    a = input()
+    print('Numarul introdus a=', a)
+    print('Introduceti al doilea numar, b')
+    b = input()
+    print('Numarul introdus b=', b)
+    print('a+b=', int(a)+int(b))
 
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-def aria(latura1, latura2,latura3):
-    semiperimetru = perimetru(latura1,latura2,latura3)/2
-    return sqrt(semiperimetru*(semiperimetru-latura1)*(semiperimetru-latura2)*(semiperimetru-latura3))
-
-def perimetru(latura1, latura2, latura3):
-    return latura1+latura2+latura3
-
-
-if __name__ == '__main__':
-    print("introduceti latura1:")
-    latura1 = int(input())
-    print("introduceti latura2:")
-    latura2 = int(input())
-    print("introduceti latura3:")
-    latura3 = int(input())
-    print(perimetru(latura1,latura2,latura3))
-    print(aria(latura1,latura2,latura3))
+def diferentanumere():
+    print('Introduceti primul numar, a')
+    a = input()
+    print('Numarul introdus a=', a)
+    print('Introduceti al doilea numar, b')
+    b = input()
+    print('Numarul introdus b=', b)
+    print('a-b=', int(a)-int(b))
 
 
+def inmultirenumere():
+    print('Introduceti primul numar, a')
+    a = input()
+    print('Numarul introdus a=', a)
+    print('Introduceti al doilea numar,b')
+    b = input()
+    print('Numarul introdus b=', b)
+    print('a*b=', int(a)*int(b))
 
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def impartirenumere():
+    print('Introduceti primul numar, a')
+    a = input()
+    print('Numarul introdus a=', a)
+    print('Introduceti al doilea numar,b')
+    b = input()
+    print('Numarul introdus b=', b)
+    print('a/b=', int(a) / int(b))
 
+
+def ariatriunghiului():
+    print('Introduceti prima cateta, c1')
+    c1 = input()
+    print('Prima cateta c1=', c1)
+    print('Introduceti al doilea numar, c2')
+    c2 = input()
+    print('A doua cateta c2=', c2)
+    print('Aria trunghiului=', int(c1)*int(c2)/2)
+
+
+def perimetrultriunghiului():
+    print('Introduceti prima latura, ab')
+    ab = input()
+    print('Prima latura ab=', ab)
+    print('Introduceti a doua latura ,bc')
+    bc = input()
+    print('A doua latura bc=', bc)
+    print('Introduceti a treia latura, ac')
+    ac = input()
+    print('A treia latura ac=', ac)
+    print('Perimetrul triunghiului=', int(ab)+int(bc)+int(ac))
+
+if __name__ == "__main__":
+   sumanumere()
+   diferentanumere()
+   inmultirenumere()
+   impartirenumere()
+   ariatriunghiului()
+   perimetrultriunghiului()
